@@ -3,6 +3,8 @@ html, body{
   font-family: 'Roboto', sans-serif;
   background: #f7f7f7;
   font-size: 103%;
+  margin:0;
+  padding:0;
 }
 h1, h2, h3, h4, h5, h6, p, nav{
   font: inherit;
@@ -41,9 +43,9 @@ img.right{float:right;  margin:100px 0 0px 0px;}
 }
 
 #container{
-padding: 0px;
-margin: 0px auto;
-width: auto;
+max-width:1100px;
+margin:0 auto;
+padding:0 20px;
 }
 
 
@@ -68,8 +70,8 @@ width: auto;
 .header-container{
   display: flex;
   align-items: center;
-  gap: 30px;
-
+  gap: 40px;
+  flex-wrap:wrap;
   padding: 15px 20px;
 }
 
@@ -98,8 +100,9 @@ background-color:inherit;
 }
 
 #content{
-  width:95%;
-  margin:20px auto;
+max-width:1100px;
+margin:20px auto;
+padding:10px;
 }
 
 
@@ -278,6 +281,24 @@ margin-bottom:4px;
   background: darkgreen;
 }
 
+.nav-tiles{
+display:flex;
+justify-content:center;
+gap:10px;
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.nav-tiles li a{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+
 .tile {
   animation: .3s ease-in-out both fade-in;
 }
@@ -359,7 +380,7 @@ margin-bottom:4px;
 
 
 .cv-container{
-width:80%;
+width:100%;
 margin-top:20px;
 margin: auto;
 }
