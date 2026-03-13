@@ -2,11 +2,14 @@ html, body{
   color: #333;
   font-family: 'Roboto', sans-serif;
   background: #f7f7f7;
-  font-size: 100%;
+  font-size: 103%;
 }
 h1, h2, h3, h4, h5, h6, p, nav{
   font: inherit;
 }
+
+
+
 
 #header #nav{
 text-align:left;
@@ -27,35 +30,56 @@ background-color:inherit;
 
 a img{border:none;}
 
-img.left,img.center,img.right{padding:3px; border:none;}
+img.left,img.center,img.right{padding:2px; border:none;}
 img.left{float:left; margin:0 10px 5px 0;}
 img.center{display:block; margin:0 auto 5px auto;}
-img.right{float:right; margin:0 0 5px 10px;}
+img.right{float:right;  margin:100px 0 0px 0px;}
 
+
+.scaled {
+  transform: scale(0.8); /* Equal to scaleX(0.7) scaleY(0.7) */
+}
 
 #container{
 padding: 0px;
-margin: 20px auto;
-width: 850px;
+margin: 0px auto;
+width: auto;
 }
 
-#contact{
+
+#site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #f7f7f7 url(resources/photo.jpg) repeat-x 0 0;
+}
+#header-inner {
+  padding: 10px 16px;
+  position: relative;
+}
+#site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+}
+.header-container{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  padding: 15px 20px;
 }
 
-#header{
-background:url(aau_logo.png) no-repeat;
-padding:0px 0px 0px 200px;
-margin:10px;
-height:225px;
-width:auto;
-color:#123;
-}
 #header h1{
 color:#444;
-padding:0px 0px 0px 15px;
+padding:0px 0px 0px 0px;
 font-size:150%;
 background-color:inherit;
 }
+
 #header h2{
 color:#666;
 padding:0px 0px 0px 40px;
@@ -64,25 +88,20 @@ font-size:150%;
 background-color:inherit;
 }
 
-#header #info{
-padding: 0px 0px 0px 15px;
+#info {
+  margin-left: 220px;
+  margin-top: -160px;
 }
 
-
+.content {
+  padding: 16px;
+}
 
 #content{
-float:left;
-width:95%;
-height:auto;
-padding:0px 4px 4px 4px;
-margin-top:10px;
-margin-bottom:10px;
-margin-left:10px;
-margin-right:0;
-color:#234;
-background-color:inherit;
-text-align:justify;
+  width:95%;
+  margin:20px auto;
 }
+
 
 #content h3{
 color:#666;
@@ -107,11 +126,11 @@ background-color:inherit;
 font-weight:normal;
 }
 
-#content ul, #content ol{margin:0 5px 10px 20px;}
-#content dl{margin:0 5px 10px 20px; font-size:115%;}
+#content ul, #content ol{margin:0 5px 0px 10px;}
+#content dl{margin:0 5px 10px 0px; font-size:115%;}
 #content dt{margin-bottom:5px;}
 #content dd{margin:0 0 10px 15px;}
-#content li{margin: 10px 0;}
+#content li{margin: 0px 0;}
 
 #spin {
   color: darkgreen;
@@ -175,7 +194,7 @@ font-weight:normal;
 
 }
 .gap {
-  padding: 1em 0 5px;
+  padding: 1px 0px 0px 0px;
 }
 .social li {
   position: relative;
@@ -184,7 +203,6 @@ font-weight:normal;
   *vertical-align: auto;
   *zoom: 2;
   *display: inline;
-  margin: .5em;
   -moz-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
   -webkit-transition: all 0.1s ease;
@@ -210,15 +228,19 @@ font-weight:normal;
 .social li a {
   display: block;
   color: inherit;
-  padding: 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
   width: 6em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  text-decoration: none;
 }
-ion-icon {
-  font-size: 25px;
+
+ion-icon{
+font-size:25px;
+margin-bottom:4px;
 }
+
 .icon-resume {
   color: #e95950;
 }
@@ -283,13 +305,68 @@ ion-icon {
 .tile:nth-child(6) {
   animation-delay: 1.55s;
 }
-.avatar {
-  -moz-box-shadow: 0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333;
-  -webkit-box-shadow: 0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333;
-  box-shadow: 0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333;
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
-  width: 200px;
-  height: 200px;
+.avatar{
+  width:150px;
+  height:150px;
+  border-radius:100px;
+}
+.header-text{
+  flex:1;
+}
+
+
+#nav ul{
+  display:flex;
+  gap:10px;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+#more{
+  display:none;
+}
+
+#more.show{
+  display:inline;
+}
+
+
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 8px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  border: 2px solid #008CBA;
+  height: 30px;
+  border-radius: 12px;
+}
+
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+.cv-container{
+width:80%;
+margin-top:20px;
+margin: auto;
+}
+
+.cv-container iframe{
+width:100%;
+height:900px;
+border:none;
+background:white;
 }

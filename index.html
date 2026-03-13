@@ -1,78 +1,105 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<!-- Import favicons -->
-	-<link rel="icon" type="image/x-icon" href="resources/favicon.ico"/>
+	<link rel="icon" type="image/x-icon" href="resources/favicon.ico"/>
 	<!-- include compass css translation -->
 	<link href="resources/style.css" rel="stylesheet" type="text/css" />
 	<!-- import icons -->
 	<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
 <title>Ellie's homepage</title>
-
 </head>
 
 <body>
 
 <div id="container">
-	<div id="header">
-		<h1>Elli Anastasiadi</h1>
-		<div id="info">
-			Assistant professor at <a href="https://www.en.aau.dk/">Aalborg University</a>,<br />
-			<a href="https://www.cs.aau.dk/">Department of Computer Science</a><br />
-		</div>
-
-		<div id="nav">
+<header id="site-header">
+	<div class="header-container">
+		 <img class="avatar" src="resources/photo.jpg" alt="Photo of Elli Anastasiadi">
+    		<div class="header-text">
+      			<h1>Elli Anastasiadi</h1>
+      				Assistant professor at <a href="https://www.en.aau.dk/">Aalborg University</a>,<br>
+     				 <a href="https://www.cs.aau.dk/">Department of Computer Science</a>
+   			</div>
+ 	   <nav id="nav">
 			<center>
-				<ul class="gap social">
+				<ul class="gap social nav-tiles">
 					<li class="icon-email tile"><a href= "index.html"><ion-icon name="home"></ion-icon><br><br>Home</a></li>
 					<li class="icon-pages tile"><a href="pages/teaching.html"><ion-icon name="albums"></ion-icon><br><br>Teaching</a></li>
 					<li class="icon-transcript tile"><a href="pages/publications.html"><ion-icon name="school"></ion-icon><br><br>Publications</a></li>
-					<li class="icon-resume tile"><a href= "resources/CV.pdf"><ion-icon name="document"></ion-icon><br><br>CV</a></li>
+					<li class="icon-resume tile"><a href= "pages/CV.html"><ion-icon name="document"></ion-icon><br><br>CV</a></li>
 				</ul>
 			</center>
-		</div>
-	</div>
+		</nav>
+    </div>
+</header>
 
-	<div id="content">
-		<h3>About</h3>
+
+<div class="content" id="content">
+	<h3>About</h3>
 		<p>I am interested in <span id="spin"></span></p>
-		<!--<p> I am interested in formal verification, runtime verification, modal logics, hyperlogics, weak memory models, and process algebras.</p>
-		-->
+		<p> Since October 2024 I am an assistant professor at the <a href="https://www.cs.aau.dk/">Department of Computer Science</a> at <a href="https://www.en.aau.dk/">Aalborg University</a>! I am a member of the  <a href="https://www.cs.aau.dk/research/deis-distributed-embedded-and-intelligent-systems">DEIS</a> group. 
+         Before this, from October 2022, I was a postdoc at the <a href="http://www.it.uu.se/first?lang=en">Department of Information Technology</a> at <a href="http://www.uu.se/en/">Uppsala University</a>. I worked mostly with Parosh Abdulla and the algorithmic program verification group. 
+		 I finished my PhD at Reykjavik University in October 2022, under the supervision of Luca Aceto and Anna Ingolfsdottir. 
+	     Before Iceland, I lived in Greece, where I finished my masters in applied mathematics in <a href="https://www.ntua.gr/en/">National Technical University of Athens</a> 
+     	 under the supervision
+		 of professors Aris Pagourtzis and Stathis Zachos.  </p>
 		<div id="News">
-		<ul class="inner listOfNews"> 
-				<li>Since October 2024 I am an assistant professor at the <a href="https://www.cs.aau.dk/">Department of Computer Science</a> at <a href="https://www.en.aau.dk/">Aalborg University</a>! I am a member of the  <a href="https://www.cs.aau.dk/research/deis-distributed-embedded-and-intelligent-systems">DEIS</a> group.</li>
-				<li>I am an invited speaker at the <a href="https://www.concurrency-theory.org/events/trends/2024/">Workshop on Trends in Concurrency Theory</a>, that will take place in Calgary, Canada in September, as a part of CONFEST 2024!</li>
-				<li>I was a co-organiser of the <a href="https://logic-mentoring-workshop.github.io/csl24/">10th and 11th Logic Mentoring Workshop</a>, colocated with the 32nd CSL and the 40th LICS conferences, held in Naples and Singapore!</li>
-				<li>During Oct 2022-Sept 2024 I was a postdoc at the <a href="http://www.it.uu.se/first?lang=en">Department of Information Technology</a> at <a href="http://www.uu.se/en/">Uppsala University</a>. I worked mostly with Parosh Abdulla and the algorithmic program verification group.</li>
-				<li>I finished my PhD at Reykjavik University in October 2022, under the supervision of Luca Aceto and Anna Ingolfsdottir! :) You can find my dissertation in my publications tab. </li>
-				<li>I moved to Iceland from Greece, where I finished my masters in applied mathematics and computer science in NTUA under the supervision of professors Aris Pagourtzis and Stathis Zachos. You can find my Master's thesis under my publications. </li>
-				<li>My project, "Runtime and Equational Verification of Concurent Systems" was awarded a PhD grant from the Reykjavik University <a href="https://en.ru.is/research/ru-research-fund/">research fund</a> :). Check it out <a href="resources/RANNIS.pdf">here.</a> </li>
-		</ul>
-		<div id="contact">
-			<p style="float: right;"><img src="resources/photo.jpg" alt="Photo of Elli Anastasiadi" /></p>
-
-			<h3>Contact</h3>
-			<p>
-			<b>Office:</b> Room 1.2.57, Cassiopeia <br />
-			<b>E-mail:</b> <a href="mailto:ellia-SPAMTRAP@cs.aau.dk">ellia [-at-] cs.aau.dk</a><br />
-			<b>Phone:</b> +45- 42257702
-			<br /><br />
-			<b>Postal address:</b><br />
-			Aalborg University<br />
-			Department of Computer Science<br />
-			Att: Elli Anastasiadi<br />
-			Selma Lagerl&oslash;fs Vej 300, 9220 Aalborg<br />
-			Denmark<br />
-			</p>
+			<h3>News</h3>
+			<ul class="inner listOfNews"> 
+				<li> Feb 2026: The project grant Hyperlogics: Expressiveness, Monitorability and Tools <a href="https://island.is/en/o/rannis/news/allocation-from-the-icelandic-research-fund-for-the-financial-year-2026">(H.-Lo)</a>, that I am a co-PI of, has recieved funding by the Icelandic Research Fund!</li>
+				<li> Dec 2025: I was invited to give a talk at the <a href="http://panhellenic-logic-symposium.org/15/"> 15th Panhellenic Logic Symposium</a>, that will take place in Athens, Greece in July. Please consider submitting!</li>
+				<span id="dots"></span>
+				<span id="more">
+					<li>I am an invited speaker at the <a href="https://www.concurrency-theory.org/events/trends/2024/">Workshop on Trends in Concurrency Theory</a>, that will take place in Calgary, Canada in September, as a part of CONFEST 2024!</li>
+					<li>I was a co-organiser of the <a href="https://logic-mentoring-workshop.github.io/csl24/">10th and 11th Logic Mentoring Workshop</a>, colocated with the 32nd CSL and the 40th LICS conferences, held in Naples and Singapore!</li>
+					<li>My project, "Runtime and Equational Verification of Concurent Systems" was awarded a PhD grant from the Reykjavik 
+						University <a href="https://en.ru.is/research/ru-research-fund/">research fund</a> :).
+						Check it out <a href="resources/RANNIS.pdf">here.</a></li></span> 
+						<button id="myBtn" class="button button1" type="button" onclick="myFunction()">
+					 		Show older news 
+				        </button>
+			</ul>
+			<div id="contact">
+				<h3>Contact</h3>
+				<p>
+				<b>Office:</b> Room 1.2.57, Cassiopeia, Selma Lagerl&oslash;fs Vej 300, 9220 Aalborg <br />
+				<b>E-mail:</b> <a href="mailto:ellia-SPAMTRAP@cs.aau.dk">ellia [-at-] cs.aau.dk</a><br />
+				<b>Phone:</b> +45- 42257702
+				<br /><br />
+				<b>Postal Address:</b><br />
+				Aalborg University<br />
+				Department of Computer Science<br />
+					Selma Lagerl&oslash;fs Vej 300, 9220 Aalborg<br />
+					Denmark<br />
+				</p>
+			</div>
 		</div>
-	  	
 	</div>
-	  
 </div>
+<script>
+function myFunction() {
+
+  const more = document.getElementById("more");
+  const btn = document.getElementById("myBtn");
+
+  more.classList.toggle("show");
+
+  if(more.classList.contains("show")){
+    btn.innerHTML = "Read less";
+  } else {
+    btn.innerHTML = "Show older news";
+  }
+
+}
+</script>
+
+
+
+
 
 </body>
 </html>
