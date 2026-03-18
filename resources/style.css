@@ -177,7 +177,6 @@ font-weight:normal;
 }
 .social li {
   position: relative;
-  display: block;
   vertical-align: middle;
   vertical-align: auto;
   -moz-transition: all 0.1s ease;
