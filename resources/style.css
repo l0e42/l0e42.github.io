@@ -177,6 +177,7 @@ font-weight:normal;
 }
 .social li {
   position: relative;
+  zoom: 2;
   vertical-align: middle;
   vertical-align: auto;
   -moz-transition: all 0.1s ease;
@@ -260,7 +261,6 @@ gap:10px;
 list-style:none;
 padding:0;
 margin:0;
-zoom: 2;
 }
 
 .nav-tiles li a{
@@ -396,14 +396,16 @@ background:white;
     height:100px;
   }
 
-  .nav-tiles{
+  #nav ul{
     display:grid;
+  }
+
+  .nav-tiles{
     grid-template-columns: repeat(2, 1fr);
     gap:10px;
     width:100%;
     max-width:300px;
     margin-top:7px;
-    
   }
 
   .nav-tiles li a{
