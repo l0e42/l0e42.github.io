@@ -2,7 +2,7 @@ html, body{
   color: #333;
   font-family: 'Roboto', sans-serif;
   background: #f7f7f7;
-  font-size: 104%;
+  font-size: 105%;
   margin:0;
   padding:0;
 }
@@ -305,8 +305,8 @@ font-size:15px;
   animation-delay: 1.55s;
 }
 .avatar{
-  width:150px;
-  height:150px;
+  width:160px;
+  height:160px;
   border-radius:100px;
 }
 .header-text{
